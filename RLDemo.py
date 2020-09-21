@@ -39,7 +39,7 @@ while True:  # Run until solved
     with tf.GradientTape() as tape:
         for timestep in range(1, max_steps_per_episode):
             # env.render(); Adding this line would show the attempts
-            env.render("Test")
+            env.render()
             # of the agent in a pop up window.
 
             state = tf.convert_to_tensor(state)
